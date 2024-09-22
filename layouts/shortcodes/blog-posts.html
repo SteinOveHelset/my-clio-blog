@@ -1,0 +1,6 @@
+{{ $posts := where .Site.Pages "Section" "posts" }}
+<ul>
+{{ range $posts }}
+<li><a href="{{ .Permalink }}">{{ .Title }}</a></li>
+{{ end }}
+</ul>
